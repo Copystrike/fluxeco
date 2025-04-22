@@ -48,7 +48,7 @@ export default function Home() {
               <div className="point gap-y-3 flex flex-col items-center">
                 <Image src="/placeholder-icon-low-price.png" alt="Icon lage prijs" width={100} height={100} className="problem-icon" />
                 <h3>Lage Terugleververgoeding</h3>
-                <p>U ontvangt vaak minder dan 5 cent/kWh – ver onder de marktprijs.</p>
+                <p>U ontvangt vaak minder dan 5 cent/kWh, ver onder de marktprijs.</p>
               </div>
               <div className="point gap-y-3 flex flex-col items-center">
                 <Image src="/placeholder-icon-unfair.png" alt="Icon oneerlijk" width={100} height={100} className="problem-icon" />
@@ -130,6 +130,50 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Team Section */}
+        <section id="team" className="section team-section">
+          <div className="container">
+            <h2>Ons Team</h2>
+            <div className="team-grid">
+              <div className="team-member">
+                <div className="image-wrapper">
+                  <Image src="/team/moussa.png" alt="Moussa Moussaoui" fill className="object-cover rounded-full" />
+                </div>
+                <h3>Moussa Moussaoui</h3>
+                <p>CEO & CFO</p>
+              </div>
+              <div className="team-member">
+                <div className="image-wrapper">
+                  <Image src="/team/jason.png" alt="Jason Van de Berckt" fill className="object-cover rounded-full" />
+                </div>
+                <h3>Jason Van de Berckt</h3>
+                <p>CO-CEO & CIO</p>
+              </div>
+              <div className="team-member">
+                <div className="image-wrapper">
+                  <Image src="/team/nick.png" alt="Nick Verbraecken" fill className="object-cover rounded-full" />
+                </div>
+                <h3>Nick Verbraecken</h3>
+                <p>CTO</p>
+              </div>
+              <div className="team-member">
+                <div className="image-wrapper">
+                  <Image src="/team/samin.png" alt="Samin Hafizi" fill className="object-cover rounded-full" />
+                </div>
+                <h3>Samin Hafizi</h3>
+                <p>CSO & CMO</p>
+              </div>
+              <div className="team-member">
+                <div className="image-wrapper">
+                  <Image src="/team/yassir.png" alt="Yassir EL Amraoui" fill className="object-cover rounded-full" />
+                </div>
+                <h3>Yassir EL Amraoui</h3>
+                <p>co-CTO</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Sign Up Section */}
         <section id="signup" className="section signup-section">
           <div className="container text-center">
@@ -147,6 +191,11 @@ export default function Home() {
       <footer className="footer">
         <div className="container">
           <p>© 2025 Fluxeco.</p>
+          <div className="legal-links">
+            <a href="/cookie-policy" className="footer-link">Cookiebeleid</a> | 
+            <p>BTW BEXXX.XXX.XXX</p> | 
+            <a href="/contact" className="footer-link">Contact</a>
+          </div>
         </div>
       </footer>
     </div>
