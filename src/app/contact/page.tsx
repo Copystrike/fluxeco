@@ -35,8 +35,8 @@ export default function Contact() {
         <div className="container">
           <p>© 2025 Fluxeco.</p>
           <div className="legal-links">
-            <a href="/cookie-policy" className="footer-link">Cookiebeleid</a> | 
-            <p>BTW BEXXX.XXX.XXX</p> | 
+            <a href="/cookie-policy" className="footer-link">Cookiebeleid</a> | {' '}
+            <span>BTW BEXXX.XXX.XXX</span> | 
             <a href="/contact" className="footer-link">Contact</a>
           </div>
         </div>
