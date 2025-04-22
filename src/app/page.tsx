@@ -15,7 +15,7 @@ export default function Home() {
               <li><a href="#benefits">Voordelen</a></li>
             </ul>
           </nav>
-          <a href="#signup" className="cta-button nav-cta">Meld Interesse</a>
+          <a href="#signup" className="cta-button nav-cta">Meld aan</a>
         </div>
       </header>
 
