@@ -176,7 +176,7 @@ export default function Home() {
         <section id="signup" className="section signup-section">
           <div className="container text-center">
             <h2>Klaar om de Controle Terug te Nemen?</h2>
-            <p>Laat uw e-mailadres achter en wees als eerste op de hoogte wanneer Fluxeco lanceert. Ontvang updates, early access-mogelijkheden en maak deel uit van de energierevolutie.</p>
+            <p>Laat uw e-mailadres achter.</p>
             <form id="interest-form">
               <input type="email" id="email" name="email" placeholder="info@fluxeco.be" required />
               <button type="submit" className="cta-button">Verstuur Mijn Interesse</button>
