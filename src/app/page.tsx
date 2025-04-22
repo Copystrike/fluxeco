@@ -13,8 +13,6 @@ export default function Home() {
               <li><a href="#solution">Oplossing</a></li>
               <li><a href="#how-it-works">Hoe Werkt Het?</a></li>
               <li><a href="#benefits">Voordelen</a></li>
-              <li><a href="#pricing">Prijzen</a></li>
-              <li><a href="#about">Over Ons</a></li>
             </ul>
           </nav>
           <a href="#signup" className="cta-button nav-cta">Meld Interesse</a>
