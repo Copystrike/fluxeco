@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 
 export default function Home() {
@@ -52,7 +53,7 @@ export default function Home() {
               <div className="point gap-y-3 flex flex-col items-center">
                 <Image src="/placeholder-icon-unfair.png" alt="Icon oneerlijk" width={100} height={100} className="problem-icon" />
                 <h3>Oneerlijke markt</h3>
-                <p>Grote spelers worden beloond, kleine producenten soms zelfs beboet.</p>
+                <p>Grote spelers worden beloond, u wordt beboet.</p>
               </div>
             </div>
           </div>
@@ -63,12 +64,41 @@ export default function Home() {
           <div className="container split">
             <div className="text-content">
               <h2>De oplossing: Fluxeco - directe energiehandel</h2>
-              <p>Fluxeco is een peer-to-business (P2B) energieplatform. Wij maken het mogelijk voor huishoudens en KMO's om hun groene energieoverschotten rechtstreeks te verkopen aan energie-intensieve bedrijven die duurzaamheid zoeken.</p>
+              <p>Fluxeco is een peer-to-business (P2B) energieplatform. Wij maken het mogelijk voor u (huishoudens en KMO's) om hun groene energieoverschotten rechtstreeks te verkopen aan energie-intensieve bedrijven die duurzaamheid zoeken.</p>
               <p><strong>Geen lage vergoedingen meer. Geen oneerlijke boetes.</strong> Wel een eerlijke prijs voor uw lokale, groene stroom, direct van producent naar verbruiker.</p>
               <a href="https://dashboard.fluxeco.be" className="cta-button">Begin vandaag</a>
             </div>
-            <div className="image-content">
-              <Image src="/placeholder-solution.png" alt="Schema van directe energiehandel tussen huis en bedrijf" width={600} height={400} />
+            <div className="image-content phone-mockup-wrapper">
+              <div className="phone-mockup" style={{ position: "relative", width: 300, height: 600 }}>
+                <Image
+                  src="/phone-mockup.png"
+                  alt="Telefoonhouder"
+                  width={300}
+                  height={600}
+                  className="phone-mockup-img"
+                  draggable={false}
+                  style={{ display: "block", width: "100%", height: "auto", pointerEvents: "none", userSelect: "none" }}
+                />
+                <video
+                  src="/Screen_Recording_20250523_204752_Chrome.mp4"
+                  width={252}
+                  height={537}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  style={{
+                    position: "absolute",
+                    top: "20px",
+                    left: "23px",
+                    borderRadius: "24px",
+                    boxShadow: "0 2px 16px rgba(0,0,0,0.08)",
+                    zIndex: 2,
+                    background: "#000",
+                    objectFit: "cover"
+                  }}
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -81,20 +111,15 @@ export default function Home() {
               <div className="step">
                 <div className="step-number">1</div>
                 <h3>Connecteer</h3>
-                <p>Koppel uw digitale meter (verplicht vanaf 2025) aan Fluxeco. Veilig en eenvoudig.</p>
+                <p>Koppel uw digitale meter aan het Fluxeco netwerk. Veilig en eenvoudig.</p>
               </div>
               <div className="step">
                 <div className="step-number">2</div>
-                <h3>Bundel slim</h3>
-                <p>Wij voegen uw overschot virtueel samen met andere producenten tot een betrouwbaar volume.</p>
+                <h3>Match & verkoop</h3>
+                <p>Bedrijven kopen uw groene stroom rechtstreeks via ons platform.</p>
               </div>
               <div className="step">
                 <div className="step-number">3</div>
-                <h3>Match & verkoop</h3>
-                <p>Bedrijven kopen uw gebundelde groene stroom rechtstreeks via ons platform.</p>
-              </div>
-              <div className="step">
-                <div className="step-number">4</div>
                 <h3>Verdien eerlijk</h3>
                 <p>U ontvangt een veel betere prijs dan de traditionele terugleververgoeding.</p>
               </div>
@@ -108,21 +133,21 @@ export default function Home() {
             <h2 className="text-center">Voordelen voor iedereen</h2>
             <div className="benefits-columns">
               <div className="benefit-column">
-                <h3>Voor energieproducenten (huishoudens & kmo's)</h3>
+                <h3>Voor u (huishoudens & kmo's)</h3>
                 <ul>
-                  <li><strong>Hogere Opbrengst:</strong> Verdien een eerlijke, marktconforme prijs voor uw overschot.</li>
-                  <li><strong>Winstgevende Investering:</strong> Maak uw zonnepanelen sneller rendabel en zelfs winstgevend.</li>
-                  <li><strong>Geen Gedoe:</strong> Wij regelen de matching en administratie.</li>
-                  <li><strong>Simpele Start:</strong> Enkel een digitale meter nodig.</li>
+                  <li><strong>Hogere opbrengst:</strong> Verdien een eerlijke, marktconforme prijs voor uw overschot.</li>
+                  <li><strong>Winstgevende investering:</strong> Maak uw zonnepanelen sneller rendabel en zelfs winstgevend.</li>
+                  <li><strong>Geen gedoe:</strong> Wij regelen de matching en administratie.</li>
+                  <li><strong>Simpele start:</strong> Enkel een digitale meter nodig.</li>
                 </ul>
               </div>
               <div className="benefit-column">
                 <h3>Voor energie-intensieve bedrijven</h3>
                 <ul>
-                  <li><strong>Lagere Energiekosten:</strong> Toegang tot lokaal geproduceerde groene stroom tegen competitieve prijzen.</li>
-                  <li><strong>CO2-Reductie:</strong> Verlaag uw ecologische voetafdruk met écht groene energie.</li>
-                  <li><strong>Betrouwbare Levering:</strong> Stabiele energiestroom dankzij onze slimme bundeling.</li>
-                  <li><strong>Transparante Contracten:</strong> Duidelijke jaarcontracten, direct met lokale producenten (via Fluxeco).</li>
+                  <li><strong>Lagere energiekosten:</strong> Toegang tot lokaal geproduceerde groene stroom tegen competitieve prijzen.</li>
+                  <li><strong>ESG rapportering:</strong> Betere ESG rapportering voor bedrijven.</li>
+                  <li><strong>Betrouwbare levering:</strong> Stabiele energiestroom dankzij onze slimme bundeling.</li>
+                  <li><strong>Transparante contracten:</strong> Duidelijke jaarcontracten, direct met lokale producenten (via Fluxeco).</li>
                 </ul>
               </div>
             </div>
@@ -176,7 +201,7 @@ export default function Home() {
         {/* Sign Up Section */}
         <section id="signup" className="section signup-section">
           <div className="container text-center">
-            <h2>Klaar om de controle terug te nemen?</h2>
+            <h2>Klaar om geld te verdienen?</h2>
             <p>Log nu in op ons dashboard om te starten.</p>
             <a href="https://dashboard.fluxeco.be" className="cta-button">Probeer het direct</a>
           </div>
