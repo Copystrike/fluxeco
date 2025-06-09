@@ -1,26 +1,116 @@
 @import "tailwindcss";
 
+/* Add RGB variables for color system */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background-rgb: 255, 255, 255;           /* #fff */
+  --foreground-rgb: 23, 23, 23;              /* #171717 */
+
+  --primary-rgb: 46, 204, 113;               /* #2ecc71 */
+  --primary-hover-rgb: 39, 174, 96;          /* #27ae60, a darker shade of primary */
+
+  --secondary-rgb: 52, 152, 219;             /* #3498db */
+  --secondary-hover-rgb: 41, 128, 185;       /* #2980b9, a darker shade of secondary */
+
+  --accent-rgb: 244, 244, 244;               /* #f4f4f4, using as accent/gray-bg */
+  --accent-hover-rgb: 220, 220, 220;         /* slightly darker gray */
+
+  --muted-foreground-rgb: 85, 85, 85;        /* #555, for less important text */
+
+  --card-background-rgb: 255, 255, 255;      /* #fff, light-color */
+  --card-border-rgb: 244, 244, 244;          /* #f4f4f4, gray-bg */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+@theme {
+  --background: #fff;
+  --foreground: #171717;
+
+  --primary: #2ecc71;                        /* Fluxeco Green */
+  --primary-hover: #27ae60;
+  --primary-foreground: #fff;                /* White text on primary */
+
+  --secondary: #3498db;                      /* Accent Blue */
+  --secondary-hover: #2980b9;
+  --secondary-foreground: #fff;              /* White text on secondary */
+
+  --accent: #f4f4f4;                         /* Accent Gray */
+  --accent-hover: #dcdcdc;
+  --accent-foreground: #555;                 /* Dark text on accent */
+
+  --muted: #f4f4f4;                          /* Subtle backgrounds */
+  --muted-foreground: #555;                  /* For less important text */
+
+  --card: #fff;                              /* Card background */
+  --card-foreground: #171717;
+  --card-border: #f4f4f4;
+
+  --popover: var(--background);
+  --popover-foreground: var(--foreground);
+
+  --destructive: #e74c3c;                    /* Red for destructive actions */
+  --destructive-foreground: #fff;
+
+  --border: var(--card-border);
+  --input: var(--card-border);
+  --ring: var(--primary);                    /* Focus ring color */
+
+  --radius: 0.5rem;                          /* Base border radius */
+
+  /* Font variables (assuming --font-geist-sans and --font-geist-mono are available) */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background-rgb: 44, 62, 80;            /* #2c3e50, dark-color */
+    --foreground-rgb: 255, 255, 255;         /* #fff */
+
+    --primary-rgb: 46, 204, 113;             /* #2ecc71 */
+    --primary-hover-rgb: 39, 174, 96;        /* #27ae60 */
+
+    --secondary-rgb: 52, 152, 219;           /* #3498db */
+    --secondary-hover-rgb: 41, 128, 185;     /* #2980b9 */
+
+    --accent-rgb: 34, 49, 63;                /* #22313f, a dark accent */
+    --accent-hover-rgb: 44, 62, 80;          /* #2c3e50 */
+
+    --muted-foreground-rgb: 244, 244, 244;   /* #f4f4f4, light muted text */
+
+    --card-background-rgb: 44, 62, 80;       /* #2c3e50 */
+    --card-border-rgb: 34, 49, 63;           /* #22313f */
   }
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer components {
+  .container-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+
+  .h1-text {
+    @apply text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl;
+  }
+  .h2-text {
+    @apply text-3xl font-bold tracking-tight sm:text-4xl;
+  }
+  .h3-text {
+    @apply text-2xl font-semibold tracking-tight;
+  }
+  .p-text {
+    @apply text-lg text-gray-600 dark:text-gray-300;
+  }
+  .muted-text {
+    @apply text-sm text-slate-500 dark:text-slate-400;
+  }
 }
