@@ -62,27 +62,6 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-rgb: 44, 62, 80;            /* #2c3e50, dark-color */
-    --foreground-rgb: 255, 255, 255;         /* #fff */
-
-    --primary-rgb: 46, 204, 113;             /* #2ecc71 */
-    --primary-hover-rgb: 39, 174, 96;        /* #27ae60 */
-
-    --secondary-rgb: 52, 152, 219;           /* #3498db */
-    --secondary-hover-rgb: 41, 128, 185;     /* #2980b9 */
-
-    --accent-rgb: 34, 49, 63;                /* #22313f, a dark accent */
-    --accent-hover-rgb: 44, 62, 80;          /* #2c3e50 */
-
-    --muted-foreground-rgb: 244, 244, 244;   /* #f4f4f4, light muted text */
-
-    --card-background-rgb: 44, 62, 80;       /* #2c3e50 */
-    --card-border-rgb: 34, 49, 63;           /* #22313f */
-  }
-}
-
 body {
   background-color: var(--background);
   color: var(--foreground);
