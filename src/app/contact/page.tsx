@@ -66,12 +66,12 @@ export default function ContactPage() {
       // if (result.ok) { // if using actual fetch
       if (true) {
         // Simulate success
-        setSubmitMessage("Bedankt! Je bericht is succesvol verzonden. We nemen snel contact met je op.");
+        setSubmitMessage("Bedankt! Je Bericht Is Succesvol Verzonden. We Nemen Snel Contact Met Je Op.");
         setFormData({ name: "", email: "", subject: "", userType: "", message: "" }); // Reset form
       } else {
       }
     } catch (error) {
-      setSubmitMessage("Fout: Het formulier kon niet worden verzonden. Controleer je verbinding of probeer het later opnieuw.");
+      setSubmitMessage("Fout: Het Formulier Kon Niet Worden Verzonden. Controleer Je Verbinding Of Probeer Het Later Opnieuw.");
     } finally {
       setIsSubmitting(false);
     }
@@ -184,8 +184,8 @@ export default function ContactPage() {
                   >
                     {/* Translate feedback messages */}
                     {submitMessage.startsWith("Error:")
-                      ? "Fout: Het formulier kon niet worden verzonden. Controleer je verbinding of probeer het later opnieuw."
-                      : "Bedankt! Je bericht is succesvol verzonden. We nemen snel contact met je op."}
+                      ? "Fout: Het Formulier Kon Niet Worden Verzonden. Controleer Je Verbinding Of Probeer Het Later Opnieuw."
+                      : "Bedankt! Je Bericht Is Succesvol Verzonden. We Nemen Snel Contact Met Je Op."}
                   </p>
                 )}
               </form>

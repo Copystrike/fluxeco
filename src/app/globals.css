@@ -111,6 +111,7 @@ body {
   }
   .p-text {
     @apply text-lg text-gray-600 dark:text-gray-300;
+    text-transform: capitalize; /* Ensure uppercase at the beginning of sentences */
   }
   .muted-text {
     @apply text-sm text-slate-500 dark:text-slate-400;

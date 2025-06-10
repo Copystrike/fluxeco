@@ -17,17 +17,17 @@ export default function HowToJoinProducers() {
   const steps = [
     {
       title: "Connecteer",
-      description: "Koppel uw digitale meter aan het Fluxeco netwerk. Veilig en eenvoudig.",
+      description: "koppel uw digitale meter aan het fluxeco netwerk. veilig en eenvoudig.",
       icon: <Settings size={20} />,
     },
     {
       title: "Kies & Verkoop",
-      description: "Bedrijven kopen uw groene stroom rechtstreeks via ons platform.",
+      description: "bedrijven kopen uw groene stroom rechtstreeks via ons platform.",
       icon: <UserPlus size={20} />,
     },
     {
       title: "Verdien Eerlijk",
-      description: "U ontvangt een veel betere prijs dan de traditionele terugleververgoeding.",
+      description: "u ontvangt een veel betere prijs dan de traditionele terugleververgoeding.",
       icon: <Zap size={20} />,
     },
   ];
@@ -35,8 +35,8 @@ export default function HowToJoinProducers() {
   return (
     <section id="how-to-join-producers" className="section-padding container-padding">
       <div className="text-center mb-12 md:mb-16">
-        <h2 className="h2-text">Starten in 3 Eenvoudige Stappen</h2>
-        <p className="p-text mt-4 max-w-3xl mx-auto">Koppel uw meter, kies kopers en verdien een eerlijke prijs voor uw zonne-energie.</p>
+        <h2 className="h2-text">starten in 3 eenvoudige stappen</h2>
+        <p className="p-text mt-4 max-w-3xl mx-auto">koppel uw meter, kies kopers en verdien een eerlijke prijs voor uw zonne-energie.</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
         {steps.map((step, index) => (

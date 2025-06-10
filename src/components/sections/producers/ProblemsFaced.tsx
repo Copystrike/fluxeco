@@ -25,18 +25,18 @@ const ProblemItem: React.FC<{
 
 export default function ProblemsFaced() {
   const problems = [
-    { title: "Voordeel Terugdraaiende Teller Stopt", description: "Nu de terugdraaiende teller stopt, wordt uw extra energie niet meer op dezelfde manier van uw rekening afgetrokken.", icon: <TrendingDown />, iconBgColor: "bg-orange-500 dark:bg-orange-600" },
-    { title: "Lage Prijs voor Terugleveren", description: "De prijs die u krijgt voor zonnestroom die u op het net zet, is vaak erg laag. Soms moet u zelfs bijbetalen ('terugleverboetes').", icon: <FileWarning />, iconBgColor: "bg-red-500 dark:bg-red-600" },
-    { title: "Nadelen Capaciteitstarief", description: "Als u weinig eigen stroom verbruikt, kunnen uw netkosten stijgen door het capaciteitstarief voor piekverbruik.", icon: <Wind />, iconBgColor: "bg-sky-500 dark:bg-sky-600" },
-    { title: "Weinig Keus om te Verkopen", description: "Als kleine producent is het moeilijk om een goede en eerlijke prijs te krijgen voor uw waardevolle groene stroom.", icon: <Ban />, iconBgColor: "bg-slate-500 dark:bg-slate-600" }
+    { title: "Voordeel Terugdraaiende Teller Stopt", description: "nu de terugdraaiende teller stopt, wordt uw extra energie niet meer op dezelfde manier van uw rekening afgetrokken.", icon: <TrendingDown />, iconBgColor: "bg-orange-500 dark:bg-orange-600" },
+    { title: "Lage Prijs voor Terugleveren", description: "de prijs die u krijgt voor zonnestroom die u op het net zet, is vaak erg laag. soms moet u zelfs bijbetalen ('terugleverboetes').", icon: <FileWarning />, iconBgColor: "bg-red-500 dark:bg-red-600" },
+    { title: "Nadelen Capaciteitstarief", description: "als u weinig eigen stroom verbruikt, kunnen uw netkosten stijgen door het capaciteitstarief voor piekverbruik.", icon: <Wind />, iconBgColor: "bg-sky-500 dark:bg-sky-600" },
+    { title: "Weinig Keus om te Verkopen", description: "als kleine producent is het moeilijk om een goede en eerlijke prijs te krijgen voor uw waardevolle groene stroom.", icon: <Ban />, iconBgColor: "bg-slate-500 dark:bg-slate-600" }
   ];
 
   return (
     <section className="section-padding container-padding bg-slate-50 dark:bg-slate-900">
       <div className="text-center mb-16 md:mb-20">
-        <h2 className="h2-text">Herkent U Deze Nadelen van Zonnepanelen?</h2>
+        <h2 className="h2-text">herkent u deze nadelen van zonnepanelen?</h2>
         <p className="p-text mt-4 max-w-3xl mx-auto">
-          Als u zonnepanelen heeft in Vlaanderen, klinken deze problemen vast bekend. U bent niet de enige.
+          als u zonnepanelen heeft in vlaanderen, klinken deze problemen vast bekend. u bent niet de enige.
         </p>
       </div>
       <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">

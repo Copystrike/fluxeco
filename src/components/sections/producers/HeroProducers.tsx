@@ -14,11 +14,11 @@ export default function HeroProducers() {
             <span className="block text-[rgb(var(--primary-rgb))] mt-2">Verdien Wat Het Echt Waard Is.</span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-[rgb(var(--muted-foreground))]">
-            Uw zonnepanelen zijn veel waard. FLUXECO helpt u er het maximale uit te halen. Wij brengen u direct in contact met bedrijven die uw groene stroomoverschot willen kopen. Zo krijgt u een eerlijke prijs.
+            uw zonnepanelen zijn veel waard. fluxeco helpt u er het maximale uit te halen. wij brengen u direct in contact met bedrijven die uw groene stroomoverschot willen kopen. zo krijgt u een eerlijke prijs.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
             <Button size="lg" asChild className="shadow-lg hover:shadow-xl transition-shadow">
-              <Link href="#earnings-potential">Bekijk Uw Potentiële Inkomsten</Link>
+              <Link href="#earnings-potential">bekijk uw potentiële inkomsten</Link>
             </Button>
             <Button size="lg" variant="outline" asChild className="border-[rgb(var(--primary-rgb))] text-[rgb(var(--primary-rgb))] hover:bg-green-50 dark:hover:bg-slate-700/50 shadow-md hover:shadow-lg transition-shadow">
               <Link href="#how-to-join-producers">Hoe Deelnemen</Link>

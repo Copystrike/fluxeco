@@ -29,19 +29,19 @@ export default function EarningsPotential() {
         <div className="text-center mb-16 md:mb-20">
           <Coins className="w-16 h-16 text-yellow-400 mx-auto mb-6" />
           <h2 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
-            Ontdek Uw <span className="text-yellow-400">Echte</span> Winst met Zonne-energie
+            ontdek uw <span className="text-yellow-400">echte</span> winst met zonne-energie
           </h2>
           <p className="mt-6 text-lg sm:text-xl text-green-100 dark:text-green-200 max-w-3xl mx-auto">
-            Geen giswerk meer. Hier is een duidelijke vergelijking die laat zien hoe FLUXECO uw inkomsten uit overtollige zonne-energie aanzienlijk verhoogt vergeleken met de gebruikelijke tarieven.
+            geen giswerk meer. hier is een duidelijke vergelijking die laat zien hoe fluxeco uw inkomsten uit overtollige zonne-energie aanzienlijk verhoogt vergeleken met de gebruikelijke tarieven.
           </p>
         </div>
 
         <div className="max-w-5xl mx-auto p-0 md:p-4">
           {/* Removed outer card styling */}
           <div className="mb-8 text-center">
-            <h3 className="text-2xl font-semibold mb-2 text-green-50">Voorbeeld: Gemiddelde Zonnepaneelinstallatie van een Gezin</h3>
+            <h3 className="text-2xl font-semibold mb-2 text-green-50">voorbeeld: gemiddelde zonnepaneelinstallatie van een gezin</h3>
             <p className="text-sm text-green-200">
-              Jaarlijkse Productie: {exampleProduction} kWh | Eigen Verbruik: {selfConsumedKWh} kWh ({selfConsumptionPercentage}%) | Op het Net Gezet: {injectedKWh} kWh
+              jaarlijkse productie: {exampleProduction} kwh | eigen verbruik: {selfConsumedKWh} kwh ({selfConsumptionPercentage}%) | op het net gezet: {injectedKWh} kwh
             </p>
           </div>
 
@@ -70,7 +70,7 @@ export default function EarningsPotential() {
               </div>
               <div className="mt-auto border-t-2 border-dashed border-red-500 pt-3">
                 <p className="text-lg font-bold text-red-200 text-center">
-                  Totale Waarde: €{totalValueTraditionalMin.toFixed(2)} - €{totalValueTraditionalMax.toFixed(2)}
+                  totale waarde: €{totalValueTraditionalMin.toFixed(2)} - €{totalValueTraditionalMax.toFixed(2)}
                 </p>
               </div>
             </div>
@@ -80,18 +80,18 @@ export default function EarningsPotential() {
               {/* Brighter, stands out, ring highlight */}
               <div className="text-center mb-4">
                 <Sun className="w-12 h-12 text-yellow-500 mx-auto mb-2" />
-                <h4 className="text-xl font-bold text-green-700">Met FLUXECO</h4>
-                <p className="text-xs text-green-600">(~€{fluxecoNetPricePerKWh.toFixed(4)} / kWh netto voor energie op het net)</p>
+                <h4 className="text-xl font-bold text-green-700">met fluxeco</h4>
+                <p className="text-xs text-green-600">(~€{fluxecoNetPricePerKWh.toFixed(4)} / kwh netto voor energie op het net)</p>
               </div>
               <div className="space-y-1 text-sm text-slate-700 flex-grow">
                 <p>
-                  Waarde van Energie op het Net:{" "}
+                  waarde van energie op het net:{" "}
                   <span className="font-semibold float-right">
                     €{earningsWithFluxeco.toFixed(2)}
                   </span>
                 </p>
                 <p>
-                  Waarde van Eigen Verbruik:{" "}
+                  waarde van eigen verbruik:{" "}
                   <span className="font-semibold float-right">
                     €{avoidedCostSelfConsumption.toFixed(2)}
                   </span>
@@ -99,7 +99,7 @@ export default function EarningsPotential() {
               </div>
               <div className="mt-auto border-t-2 border-yellow-500 pt-3">
                 <p className="text-xl font-extrabold text-green-700 text-center">
-                  Totale Waarde: €{totalValueFluxeco.toFixed(2)}
+                  totale waarde: €{totalValueFluxeco.toFixed(2)}
                 </p>
               </div>
             </div>
@@ -109,11 +109,11 @@ export default function EarningsPotential() {
             <div className="inline-flex items-center justify-center p-4 px-8 bg-yellow-400 text-green-800 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
               <TrendingUp className="w-10 h-10 mr-4" />
               <p className="text-xl font-bold">
-                FLUXECO: Duidelijk Meer Winst!
+                fluxeco: duidelijk meer winst!
               </p>
             </div>
             <p className="text-xs text-green-200 mt-6 max-w-2xl mx-auto">
-              Let op: Dit is een rekenvoorbeeld. Echte cijfers kunnen anders zijn. De gebruikte netprijs voor eigen verbruik is €0,38/kWh. FLUXECO's nettoprijs per kWh van €{fluxecoNetPricePerKWh.toFixed(4)} houdt al rekening met de geschatte administratiekost van €75/jaar voor energiedelen.
+              let op: dit is een rekenvoorbeeld. echte cijfers kunnen anders zijn. de gebruikte netprijs voor eigen verbruik is €0,38/kwh. fluxeco's nettoprijs per kwh van €{fluxecoNetPricePerKWh.toFixed(4)} houdt al rekening met de geschatte administratiekost van €75/jaar voor energiedelen.
             </p>
           </div>
         </div>
