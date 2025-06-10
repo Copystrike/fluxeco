@@ -17,7 +17,7 @@ export default function Hero() {
             <p className="mt-6 text-lg sm:text-xl text-[rgb(var(--muted-foreground))] max-w-xl mx-auto md:mx-0">FLUXECO stelt u in staat uw overtollige zonne-energie rechtstreeks aan bedrijven te verkopen tegen eerlijke prijzen. Sluit u aan bij de peer-to-peer revolutie en laat uw groene energie harder voor u werken.</p>
             <div className="mt-10 flex flex-col gap-4 sm:items-start">
               <Button asChild size="lg" variant="secondary" className="text-[rgb(var(--primary-rgb))] hover:bg-slate-100">
-                <Link href="/dashboard">Ga naar Dashboard</Link>
+                <Link href="https://dashboard.fluxeco.be">Ga naar Dashboard</Link>
               </Button>
             </div>
             <p className="mt-6 text-sm text-[rgb(var(--muted-foreground))]">Verdien wat uw zonne-energie echt waard is.</p>
