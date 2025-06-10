@@ -18,13 +18,6 @@ export default function FinalCTABuyers() {
             <Button size="lg" asChild className="bg-white text-indigo-700! hover:bg-blue-50 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 px-10 py-3.5">
               <Link href="/contact?subject=BuyerConsultationRequest&utm_source=for_buyers_page_cta">vraag een consult aan</Link>
             </Button>
-            <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white/10 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 px-10 py-3.5">
-              <Link href="/learn-more/business-solutions">
-                {" "}
-                {/* Example link */}
-                meer informatie over onze oplossingen
-              </Link>
-            </Button>
           </div>
         </div>
       </div>
