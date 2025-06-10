@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@custom-variant light (&:where([data-theme=light], [data-theme=light] *));
+@custom-variant dark (&:where(.dark, .dark *));
 
 /* Add RGB variables for color system */
 :root {
