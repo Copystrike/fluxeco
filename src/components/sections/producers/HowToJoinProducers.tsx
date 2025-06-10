@@ -21,7 +21,7 @@ export default function HowToJoinProducers() {
       icon: <Settings size={20} />,
     },
     {
-      title: "Match & Verkoop",
+      title: "Kies & Verkoop",
       description: "Bedrijven kopen uw groene stroom rechtstreeks via ons platform.",
       icon: <UserPlus size={20} />,
     },
@@ -36,7 +36,7 @@ export default function HowToJoinProducers() {
     <section id="how-to-join-producers" className="section-padding container-padding">
       <div className="text-center mb-12 md:mb-16">
         <h2 className="h2-text">Starten in 3 Eenvoudige Stappen</h2>
-        <p className="p-text mt-4 max-w-3xl mx-auto">Koppel uw meter, match met kopers en verdien een eerlijke prijs voor uw zonne-energie.</p>
+        <p className="p-text mt-4 max-w-3xl mx-auto">Koppel uw meter, kies kopers en verdien een eerlijke prijs voor uw zonne-energie.</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
         {steps.map((step, index) => (

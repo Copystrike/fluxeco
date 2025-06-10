@@ -29,7 +29,7 @@ export default function Hero() {
               <div className="phone-mockup" style={{ position: "relative", width: 300, height: 600 }}>
                 <Image src="/phone-mockup.png" alt="Telefoonhouder" width={300} height={600} className="phone-mockup-img" draggable={false} style={{ display: "block", width: "100%", height: "auto", pointerEvents: "none", userSelect: "none" }} />
                 <video
-                  src="/Screen_Recording_20250523_204752_Chrome.mp4"
+                  src="/Screen_Recording_20250610_122329_Chrome.mp4"
                   width={252}
                   height={537}
                   autoPlay
