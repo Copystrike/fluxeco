@@ -113,4 +113,16 @@ body {
   .muted-text {
     @apply text-sm text-slate-500 dark:text-slate-400;
   }
+
+  .phone-mockup-wrapper {
+    @apply flex justify-center items-center; /* Centers the phone mockup */
+  }
+
+  .phone-mockup {
+    @apply relative rounded-[36px] overflow-hidden; /* Adds shadow and rounded corners like a phone */
+  }
+
+  .phone-mockup-img {
+    @apply block w-full h-auto pointer-events-none select-none; /* Base styles for the phone image */
+  }
 }

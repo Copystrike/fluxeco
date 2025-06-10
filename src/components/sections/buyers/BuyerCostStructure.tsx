@@ -33,58 +33,52 @@ export default function BuyerCostStructure() {
       <div className="container-padding">
         <div className="text-center mb-16 md:mb-20">
           <DollarSign className="w-16 h-16 text-sky-600 dark:text-sky-400 mx-auto mb-6" />
-          <h2 className="h2-text">Transparent & Predictable Green Energy Pricing</h2>
-          <p className="p-text mt-4 max-w-3xl mx-auto">FLUXECO offers a clear cost structure for your business's green energy needs, combining competitive rates with the benefits of local, sustainable power.</p>
+          <h2 className="h2-text">Transparante & voorspelbare prijzen voor groene energie</h2>
+          <p className="p-text mt-4 max-w-3xl mx-auto">fluxeco biedt een duidelijke kostenstructuur voor de groene energiebehoeften van uw bedrijf, waarbij concurrerende tarieven worden gecombineerd met de voordelen van lokale, duurzame stroom.</p>
         </div>
 
         <div className="max-w-3xl mx-auto bg-white dark:bg-slate-900 shadow-xl rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700">
           <div className="p-6 sm:p-8 bg-sky-600 dark:bg-sky-700 text-white">
-            <h3 className="text-2xl font-bold text-center">Your All-Inclusive Green Energy Rate</h3>
+            <h3 className="text-2xl font-bold text-center">Uw all-inclusive tarief voor groene energie</h3>
           </div>
 
           <div className="py-2">
-            <CostRow name="Base Energy Component (Fixed)" value={energyComponent} note="Directly from local solar producers" />
-            <CostRow name="Grid Fees (Transmission & Distribution)" value={gridFees} note="Fluvius network costs for offtake" />
-            <CostRow name="Taxes & Levies" value={taxesLevies} note="Federal and Flemish charges" />
-            <CostRow name="FLUXECO Platform & Admin Fee" value={adminEnergySharing} note="For P2P facilitation and energy sharing services" />
-            <CostRow name="Total Estimated Cost per kWh" value={totalCost} isTotal={true} />
+            <CostRow name="Basis energiecomponent (vast)" value={energyComponent} note="rechtstreeks van lokale zonneproducenten" />
+            <CostRow name="Nettarieven (transmissie & distributie)" value={gridFees} note="fluvius netwerkkosten voor afname" />
+            <CostRow name="Belastingen & heffingen" value={taxesLevies} note="federale en vlaamse lasten" />
+            <CostRow name="Fluxeco platform & administratiekosten" value={adminEnergySharing} note="voor p2p-facilitatie en energiedelingsdiensten" />
+            <CostRow name="Totaal geschatte kosten per kwh" value={totalCost} isTotal={true} />
           </div>
 
           <div className="p-6 sm:p-8 bg-slate-50 dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700">
             <div className="flex items-start gap-3">
               <Info className="w-5 h-5 text-sky-600 dark:text-sky-400 mt-1 flex-shrink-0" />
               <div>
-                <h4 className="font-semibold text-slate-800 dark:text-slate-100 mb-1">Understanding Your Value:</h4>
+                <h4 className="font-semibold text-slate-800 dark:text-slate-100 mb-1">Uw waarde begrijpen:</h4>
                 <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                  While our total rate of <strong className="text-slate-700 dark:text-slate-200">€{totalCost.toFixed(2)}/kWh</strong> might be slightly above some basic "gray" energy contracts (approx. +€0.03/kWh as per initial estimates), FLUXECO provides significant added value:
+                  hoewel ons totaaltarief van <strong className="text-slate-700 dark:text-slate-200">€{totalCost.toFixed(2)}/kwh</strong> mogelijk iets hoger ligt dan sommige basiscontracten voor "grijze" energie (ongeveer +€0.03/kwh volgens initiële schattingen), biedt fluxeco aanzienlijke meerwaarde:
                 </p>
                 <ul className="mt-3 space-y-2 text-sm">
                   <li className="flex items-center gap-2">
                     <Leaf className="w-4 h-4 text-green-500" />
                     <span>
-                      Guaranteed <strong className="text-slate-700 dark:text-slate-200">100% local, green energy</strong>, boosting your CSR & sustainability profile.
+                      gegarandeerd <strong className="text-slate-700 dark:text-slate-200">100% lokale, groene energie</strong>, wat uw mvo- & duurzaamheidsprofiel versterkt.
                     </span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-green-500" />
                     <span>
-                      <strong className="text-slate-700 dark:text-slate-200">Price stability</strong> with fixed rates from producer pools, shielding you from market volatility.
+                      <strong className="text-slate-700 dark:text-slate-200">prijsstabiliteit</strong> met vaste tarieven van producentenpools, die u beschermen tegen marktvolatiliteit.
                     </span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Zap className="w-4 h-4 text-green-500" />
-                    <span>Simplified procurement and direct support for Flanders' energy transition.</span>
+                    <span>vereenvoudigde inkoop en directe steun voor de energietransitie in vlaanderen.</span>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="mt-12 text-center">
-          <Button variant="secondary" size="lg" asChild>
-            <Link href="/contact?subject=BuyerPricingInquiry">Discuss Your Energy Needs</Link>
-          </Button>
         </div>
       </div>
     </section>

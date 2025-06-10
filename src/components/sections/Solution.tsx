@@ -35,14 +35,14 @@ export default function Solution() {
       <div className="container-padding">
         <div className="text-center mb-16 md:mb-20">
           <h2 className="h2-text">
-            Your <span className="text-[rgb(var(--secondary-rgb))]">Pathway</span> to Fair Energy
+            Uw <span className="text-[rgb(var(--secondary-rgb))]">weg</span> naar eerlijke energie
           </h2>
           <div className="p-text mt-4 max-w-3xl mx-auto text-slate-600 dark:text-slate-300">
-            We've built a robust platform designed for transparency, profitability, and a sustainable future.
-            <SolutionFeature icon={Zap} title="Direct P2P Sales" description="Our intuitive digital platform connects solar owners directly with businesses seeking green energy, cutting out the middleman for better returns." brandColorClass="text-[rgb(var(--primary-rgb))]" />
-            <SolutionFeature icon={Combine} title="Virtual Power Plant" description="We aggregate numerous small-scale producers into a significant virtual power plant, enhancing market access and bargaining power." brandColorClass="text-[rgb(var(--secondary-rgb))]" align="right" />
-            <SolutionFeature icon={Users} title="Green Energy for Business" description="Energy-intensive companies can effortlessly source local, sustainable energy, bolstering their green credentials and ensuring stable supply." brandColorClass="text-[rgb(var(--secondary-rgb))]" />
-            <SolutionFeature icon={ShieldCheck} title="Compliant & Secure" description="All transactions adhere to the official Fluvius model for P2P energy sales, guaranteeing legal and technical compliance for peace of mind." brandColorClass="text-[rgb(var(--primary-rgb))]" align="right" />
+            We hebben een robuust platform gebouwd, ontworpen voor transparantie, winstgevendheid en een duurzame toekomst.
+            <SolutionFeature icon={Zap} title="Directe P2P verkoop" description="Ons intuïtieve digitale platform verbindt zonnepaneeleigenaren rechtstreeks met bedrijven die groene energie zoeken, waardoor tussenpersonen worden uitgeschakeld voor betere rendementen." brandColorClass="text-[rgb(var(--primary-rgb))]" />
+            <SolutionFeature icon={Combine} title="Virtuele energiecentrale" description="We bundelen talrijke kleinschalige producenten tot een significante virtuele energiecentrale, wat de markttoegang en onderhandelingskracht vergroot." brandColorClass="text-[rgb(var(--secondary-rgb))]" align="right" />
+            <SolutionFeature icon={Users} title="Groene energie voor bedrijven" description="Energie-intensieve bedrijven kunnen moeiteloos lokale, duurzame energie inkopen, hun groene referenties versterken en een stabiele levering verzekeren." brandColorClass="text-[rgb(var(--secondary-rgb))]" />
+            <SolutionFeature icon={ShieldCheck} title="Conform & veilig" description="Alle transacties voldoen aan het officiële fluvius-model voor p2p-energieverkoop, wat wettelijke en technische conformiteit garandeert voor gemoedsrust." brandColorClass="text-[rgb(var(--primary-rgb))]" align="right" />
           </div>
         </div>
       </div>

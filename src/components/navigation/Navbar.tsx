@@ -1,5 +1,6 @@
 // src/components/navigation/Navbar.tsx
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar() {
   return (
@@ -7,25 +8,34 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto container-padding">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <Link href="/" className="text-2xl font-bold text-[rgb(var(--primary-rgb))]">
-              FLUXECO
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/logo.png"
+                alt="FLUXECO Logo"
+                width={200}
+                height={200}
+                className="mr-2 invert"
+                priority
+              />
+              {/* Optionally, keep the text for accessibility or branding */}
+              {/* <span className="text-2xl font-bold text-[rgb(var(--primary-rgb))]">FLUXECO</span> */}
             </Link>
           </div>
           <div className="hidden md:flex items-center space-x-6">
             <Link href="/for-producers" className="text-foreground hover:text-[rgb(var(--primary-rgb))] transition-colors">
-              For Producers
+              Voor Producenten
             </Link>
             <Link href="/for-consumers" className="text-foreground hover:text-[rgb(var(--primary-rgb))] transition-colors">
-              For Consumers
-            </Link>
-            <Link href="/how-it-works" className="text-foreground hover:text-[rgb(var(--primary-rgb))] transition-colors">
-              How It Works
+              Voor Consumenten
             </Link>
             <Link href="/pricing" className="text-foreground hover:text-[rgb(var(--primary-rgb))] transition-colors">
-              Pricing
+              Prijzen
+            </Link>
+            <Link href="/about" className="text-foreground hover:text-[rgb(var(--primary-rgb))] transition-colors">
+              Over Ons
             </Link>
             <Link href="/contact" className="px-4 py-2 text-sm font-medium text-white bg-[rgb(var(--primary-rgb))] rounded-md hover:bg-[rgb(var(--primary-hover-rgb))] transition-colors">
-              Contact Us
+              Contacteer Ons
             </Link>
           </div>
           <div className="md:hidden">

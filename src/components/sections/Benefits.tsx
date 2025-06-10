@@ -31,38 +31,38 @@ const BenefitItem: React.FC<{
 export default function Benefits() {
   const benefitsList = [
     {
-      title: "Maximize Your Earnings",
-      description: "Secure market-competitive prices, outperforming typical low or negative feed-in tariffs.",
+      title: "Maximaliseer uw inkomsten",
+      description: "Verzeker marktconforme prijzen, beter dan typische lage of negatieve teruglevertarieven.",
       icon: <DollarSign />,
       brandColorClass: "text-[rgb(var(--primary-rgb))]",
     },
     {
-      title: "Choose Your Partners",
-      description: "Select which energy-intensive businesses you supply, aligning with companies that share your values.",
+      title: "Kies uw partners",
+      description: "Selecteer aan welke energie-intensieve bedrijven u levert, passend bij bedrijven die uw waarden delen.",
       icon: <Users />,
       brandColorClass: "text-[rgb(var(--secondary-rgb))]",
     },
     {
-      title: "Stable, Long-Term Income",
-      description: "Benefit from minimum one-year energy pool commitments, ensuring predictable income.",
+      title: "Stabiel, lange termijn inkomen",
+      description: "Profiteer van minimale eenjarige energiepoolverbintenissen, wat zorgt voor voorspelbaar inkomen.",
       icon: <ShieldPlus />,
       brandColorClass: "text-[rgb(var(--primary-rgb))]",
     },
     {
-      title: "Simplified Market Access",
-      description: "Our platform bundles small producers, granting access to larger energy deals.",
+      title: "Vereenvoudigde markttoegang",
+      description: "Ons platform bundelt kleine producenten, waardoor toegang tot grotere energiedeals mogelijk wordt.",
       icon: <BarChart3 />,
       brandColorClass: "text-[rgb(var(--secondary-rgb))]",
     },
     {
-      title: "Drive the Energy Transition",
-      description: "Play a key role in a sustainable future by supplying green energy directly to businesses.",
+      title: "Stimuleer de energietransitie",
+      description: "Speel een sleutelrol in een duurzame toekomst door groene energie direct aan bedrijven te leveren.",
       icon: <Leaf />,
       brandColorClass: "text-green-500", // Using a direct Tailwind green for variety
     },
     {
-      title: "Hassle-Free Admin",
-      description: "FLUXECO and Fluvius handle the complex administrative and technical setup for you.",
+      title: "Zorgeloze administratie",
+      description: "FLUXECO en fluvius regelen de complexe administratieve en technische setup voor u.",
       icon: <Settings />,
       brandColorClass: "text-sky-500", // Using a direct Tailwind blue for variety
     },
@@ -72,12 +72,9 @@ export default function Benefits() {
     <section className="section-padding container-padding bg-gradient-to-br from-green-50 via-white to-sky-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-800">
       <div className="text-center mb-12 md:mb-16 lg:mb-20">
         <h2 className="h2-text mb-6">
-          The FLUXECO <span className="text-[rgb(var(--primary-rgb))]">Advantage</span>
+          Het FLUXECO <span className="text-[rgb(var(--primary-rgb))]">voordeel</span>
         </h2>
-        <p className="text-xl text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">Joining FLUXECO isn't just about selling energy; it's about gaining control, maximizing value, and contributing to a greener tomorrow.</p>
-        <Button size="lg" asChild>
-          <Link href="/for-producers">Discover Producer Benefits</Link>
-        </Button>
+        <p className="text-xl text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">Deelnemen aan FLUXECO gaat niet alleen over het verkopen van energie; het gaat over controle krijgen, waarde maximaliseren en bijdragen aan een groenere toekomst.</p>
       </div>
       <div className="lg:col-span-2 text-center lg:text-left">
         <div className="lg:col-span-3">

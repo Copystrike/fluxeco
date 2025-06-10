@@ -66,12 +66,12 @@ export default function ContactPage() {
       // if (result.ok) { // if using actual fetch
       if (true) {
         // Simulate success
-        setSubmitMessage("Thank you! Your message has been sent successfully. We will get back to you shortly.");
+        setSubmitMessage("Bedankt! Je bericht is succesvol verzonden. We nemen snel contact met je op.");
         setFormData({ name: "", email: "", subject: "", userType: "", message: "" }); // Reset form
       } else {
       }
     } catch (error) {
-      setSubmitMessage("Error: Could not submit the form. Please check your connection or try again later.");
+      setSubmitMessage("Fout: Het formulier kon niet worden verzonden. Controleer je verbinding of probeer het later opnieuw.");
     } finally {
       setIsSubmitting(false);
     }
@@ -82,8 +82,10 @@ export default function ContactPage() {
       <header className="bg-gradient-to-r from-sky-600 via-cyan-600 to-blue-700 dark:from-sky-700 dark:via-cyan-700 dark:to-blue-800 py-16 sm:py-20 text-white">
         <div className="container-padding max-w-4xl mx-auto text-center">
           <MessageSquarePlus className="w-16 h-16 mx-auto mb-6 opacity-80" />
-          <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">Get in Touch</h1>
-          <p className="mt-6 text-lg sm:text-xl text-sky-100 dark:text-cyan-200">We're here to answer your questions and help you get started with FLUXECO. Whether you're a potential producer, consumer, or just curious, we'd love to hear from you.</p>
+          <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">Neem contact op</h1>
+          <p className="mt-6 text-lg sm:text-xl text-sky-100 dark:text-cyan-200">
+            We helpen je graag verder met Fluxeco. Of je nu producent, consument of gewoon nieuwsgierig bent, we horen graag van je.
+          </p>
         </div>
       </header>
 
@@ -92,11 +94,11 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-3 gap-12 lg:gap-16 items-start">
             {/* Contact Form Section */}
             <div className="lg:col-span-2 bg-white dark:bg-slate-800 p-6 sm:p-8 rounded-xl shadow-2xl border border-slate-200 dark:border-slate-700">
-              <h2 className="text-2xl sm:text-3xl font-bold text-slate-800 dark:text-slate-100 mb-8">Send Us a Message</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-slate-800 dark:text-slate-100 mb-8">Stuur ons een bericht</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-slate-700 dark:text-slate-300">
-                    Full Name
+                    Naam
                   </label>
                   <input
                     type="text"
@@ -110,7 +112,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-slate-700 dark:text-slate-300">
-                    Email Address
+                    E-mailadres
                   </label>
                   <input
                     type="email"
@@ -124,18 +126,24 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <label htmlFor="userType" className="block text-sm font-medium text-slate-700 dark:text-slate-300">
-                    I am a...
+                    Ik ben een...
                   </label>
-                  <select id="userType" name="userType" value={formData.userType} onChange={handleChange} className="mt-1 block w-full px-3 py-2 border border-slate-300 dark:border-slate-600 rounded-md shadow-sm focus:outline-none focus:ring-[rgb(var(--primary-rgb))] focus:border-[rgb(var(--primary-rgb))] sm:text-sm bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-50">
-                    <option value="">Select an option...</option>
-                    <option value="producer">Potential Energy Producer (e.g., solar owner)</option>
-                    <option value="consumer">Potential Energy Consumer (Household or Business)</option>
-                    <option value="general">General Inquiry / Other</option>
+                  <select
+                    id="userType"
+                    name="userType"
+                    value={formData.userType}
+                    onChange={handleChange}
+                    className="mt-1 block w-full px-3 py-2 border border-slate-300 dark:border-slate-600 rounded-md shadow-sm focus:outline-none focus:ring-[rgb(var(--primary-rgb))] focus:border-[rgb(var(--primary-rgb))] sm:text-sm bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-50"
+                  >
+                    <option value="">Kies een optie...</option>
+                    <option value="producer">Potentiële energieproducent</option>
+                    <option value="consumer">Potentiële energieverbruiker</option>
+                    <option value="general">Algemene vraag / anders</option>
                   </select>
                 </div>
                 <div>
                   <label htmlFor="subject" className="block text-sm font-medium text-slate-700 dark:text-slate-300">
-                    Subject
+                    Onderwerp
                   </label>
                   <input
                     type="text"
@@ -149,7 +157,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-slate-700 dark:text-slate-300">
-                    Message
+                    Bericht
                   </label>
                   <textarea
                     id="message"
@@ -158,14 +166,28 @@ export default function ContactPage() {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    className="mt-1 block w-full px-3 py-2 border border-slate-300 dark:border-slate-600 rounded-md shadow-sm focus:outline-none focus:ring-[rgb(var(--primary-rgb))] focus:border-[rgb(var(--primary-rgb))] sm:text-sm bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-50"></textarea>
+                    className="mt-1 block w-full px-3 py-2 border border-slate-300 dark:border-slate-600 rounded-md shadow-sm focus:outline-none focus:ring-[rgb(var(--primary-rgb))] focus:border-[rgb(var(--primary-rgb))] sm:text-sm bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-50"
+                  ></textarea>
                 </div>
                 <div>
                   <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
-                    {isSubmitting ? "Sending..." : "Send Message"}
+                    {isSubmitting ? "Verzenden..." : "Bericht versturen"}
                   </Button>
                 </div>
-                {submitMessage && <p className={`mt-4 text-sm text-center ${submitMessage.startsWith("Error:") ? "text-red-600 dark:text-red-400" : "text-green-600 dark:text-green-400"}`}>{submitMessage}</p>}
+                {submitMessage && (
+                  <p
+                    className={`mt-4 text-sm text-center ${
+                      submitMessage.startsWith("Error:")
+                        ? "text-red-600 dark:text-red-400"
+                        : "text-green-600 dark:text-green-400"
+                    }`}
+                  >
+                    {/* Translate feedback messages */}
+                    {submitMessage.startsWith("Error:")
+                      ? "Fout: Het formulier kon niet worden verzonden. Controleer je verbinding of probeer het later opnieuw."
+                      : "Bedankt! Je bericht is succesvol verzonden. We nemen snel contact met je op."}
+                  </p>
+                )}
               </form>
             </div>
 
@@ -173,9 +195,9 @@ export default function ContactPage() {
             <div className="space-y-8">
               <div className="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg border border-slate-200 dark:border-slate-700">
                 <h3 className="text-xl font-semibold text-slate-800 dark:text-slate-100 mb-4 flex items-center">
-                  <Mail className="w-6 h-6 mr-3 text-[rgb(var(--primary-rgb))]" /> Direct Email
+                  <Mail className="w-6 h-6 mr-3 text-[rgb(var(--primary-rgb))]" /> E-mail
                 </h3>
-                <p className="text-slate-600 dark:text-slate-300">Prefer to email us directly?</p>
+                <p className="text-slate-600 dark:text-slate-300">Stuur ons gerust direct een e-mail.</p>
                 <a href="mailto:info@fluxeco.be" className="block mt-1 text-[rgb(var(--primary-rgb))] hover:underline font-medium">
                   info@fluxeco.be
                 </a>
@@ -183,34 +205,34 @@ export default function ContactPage() {
 
               <div className="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg border border-slate-200 dark:border-slate-700">
                 <h3 className="text-xl font-semibold text-slate-800 dark:text-slate-100 mb-4 flex items-center">
-                  <Phone className="w-6 h-6 mr-3 text-[rgb(var(--primary-rgb))]" /> Phone Support
+                  <Phone className="w-6 h-6 mr-3 text-[rgb(var(--primary-rgb))]" /> Telefoon
                 </h3>
-                <p className="text-slate-600 dark:text-slate-300">For urgent matters or direct conversation:</p>
+                <p className="text-slate-600 dark:text-slate-300">Voor dringende vragen of direct contact:</p>
                 <a href="tel:+32012345678" className="block mt-1 text-[rgb(var(--primary-rgb))] hover:underline font-medium">
-                  +32 (0) 123 456 78 {/* Replace with actual number */}
+                  +32 (0) 123 456 78
                 </a>
-                <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">(Mon-Fri, 9am - 5pm CET)</p>
+                <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">(Ma-vr, 9u - 17u)</p>
               </div>
 
               {/* Optional: Physical Address */}
               {/*
               <div className="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg border border-slate-200 dark:border-slate-700">
                 <h3 className="text-xl font-semibold text-slate-800 dark:text-slate-100 mb-4 flex items-center">
-                  <MapPin className="w-6 h-6 mr-3 text-[rgb(var(--primary-rgb))]" /> Our Office
+                  <MapPin className="w-6 h-6 mr-3 text-[rgb(var(--primary-rgb))]" /> Ons kantoor
                 </h3>
                 <p className="text-slate-600 dark:text-slate-300">
-                  FLUXECO Headquarters<br />
-                  Energy Lane 123<br />
-                  1000 Brussels, Belgium 
+                  Fluxeco hoofdkantoor<br />
+                  Energielaan 123<br />
+                  1000 Brussel, België
                 </p>
               </div>
               */}
 
               <div className="text-center p-6 bg-green-50 dark:bg-green-800/30 rounded-lg border border-green-200 dark:border-green-700">
-                <h3 className="text-lg font-semibold text-green-700 dark:text-green-300 mb-2">Looking for Quick Answers?</h3>
-                <p className="text-sm text-green-600 dark:text-green-400 mb-4">Many common questions are answered on our FAQ page.</p>
+                <h3 className="text-lg font-semibold text-green-700 dark:text-green-300 mb-2">Snel antwoord nodig?</h3>
+                <p className="text-sm text-green-600 dark:text-green-400 mb-4">Veelgestelde vragen vind je op onze FAQ-pagina.</p>
                 <Button variant="outline" className="border-green-600 text-green-600 hover:bg-green-100 dark:border-green-500 dark:text-green-400 dark:hover:bg-green-700/50" asChild>
-                  <Link href="/faq">Visit FAQ</Link>
+                  <Link href="/faq">Ga naar FAQ</Link>
                 </Button>
               </div>
             </div>

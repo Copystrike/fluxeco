@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({ // Corrected: Geist_Mono is the default export
 });
 
 export const metadata: Metadata = {
-  title: "FLUXECO - Fair Energy Trading",
-  description: "Earn what your solar energy is really worth.",
+  title: "FLUXECO - Verdien wat uw zonne-energie echt waard is.",
+  description: "Verdien wat uw zonne-energie echt waard is.",
 };
 
 export default function RootLayout({

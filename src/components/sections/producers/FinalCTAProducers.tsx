@@ -6,16 +6,16 @@ export default function FinalCTAProducers() {
   return (
     <section className="section-padding container-padding bg-[rgb(var(--primary-rgb))] text-center">
       <div className="max-w-2xl mx-auto">
-        <h2 className="h2-text text-white">Ready to Maximize Your Solar Earnings?</h2>
-        <p className="p-text mt-4 text-slate-100 dark:text-slate-200">Take the next step towards fair compensation for your green energy. Explore pools or get in touch with our team.</p>
+        <h2 className="h2-text text-white">Klaar om Meer te Verdienen met Uw Zonnepanelen?</h2>
+        <p className="p-text mt-4 text-slate-100 dark:text-slate-200">Zet de volgende stap naar een eerlijke prijs voor uw groene energie. Bekijk de energiegemeenschappen of praat met ons team.</p>
         <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
           <Button size="lg" variant="outline" className="bg-white text-[rgb(var(--primary-rgb))] hover:bg-slate-100 border-white hover:border-slate-100" asChild>
-            <Link href="/pools">Explore Energy Pools</Link>
+            <Link href="/pools">Ontdek Energiegemeenschappen</Link>
             {/* Assuming a /pools page will exist */}
           </Button>
           <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white" asChild>
             {/* A slightly different shade of green for secondary CTA on green background */}
-            <Link href="/contact?subject=ProducerInquiry">Contact Us</Link>
+            <Link href="/contact?subject=ProducerAanvraag">Neem Contact Op</Link>
           </Button>
         </div>
       </div>

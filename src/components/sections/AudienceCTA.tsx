@@ -5,13 +5,13 @@ import Link from 'next/link';
 export default function AudienceCTA() {
   return (
     <section className="section-padding container-padding text-center">
-      <h2 className="h2-text">Are you a...</h2>
+      <h2 className="h2-text">Bent u een...</h2>
       <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
         <Button asChild size="lg" className="w-full sm:w-auto">
-          <Link href="/for-producers">Solar Panel Owner?</Link>
+          <Link href="/for-producers">Eigenaar van zonnepanelen?</Link>
         </Button>
         <Button asChild variant="secondary" size="lg" className="w-full sm:w-auto">
-          <Link href="/for-consumers">Business or Household Looking for Green Energy?</Link>
+          <Link href="/for-consumers">Bedrijf zoek naar groene energie?</Link>
         </Button>
       </div>
     </section>

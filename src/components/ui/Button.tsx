@@ -2,7 +2,7 @@
 import React from "react";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "outline" | "ghost" | "link";
+  variant?: "primary" | "secondary" | "outline" | "ghost" | "link" | "third";
   size?: "sm" | "md" | "lg";
   children: React.ReactNode;
   asChild?: boolean; // For using with Link or other components
@@ -20,6 +20,7 @@ const Button: React.FC<ButtonProps> = ({
 
   const variantStyles = {
     primary: "text-white bg-[rgb(var(--primary-rgb))] text-[rgb(var(--primary-foreground))] hover:bg-[rgb(var(--primary-hover-rgb))]",
+    third: "text-white bg-[rgb(var(--primary-rgb))] text-[rgb(var(--primary-foreground))] hover:bg-[rgb(var(--primary-hover-rgb))]",
     secondary: "text-white bg-[rgb(var(--secondary-rgb))] text-[rgb(var(--secondary-foreground))] hover:bg-[rgb(var(--secondary-hover-rgb))]",
     outline: "border border-[rgb(var(--input))] hover:bg-[rgb(var(--accent-rgb))] hover:text-[rgb(var(--accent-foreground))]",
     ghost: "hover:bg-[rgb(var(--accent-rgb))] hover:text-[rgb(var(--accent-foreground))]",

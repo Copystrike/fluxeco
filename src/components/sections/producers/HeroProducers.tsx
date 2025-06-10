@@ -10,18 +10,18 @@ export default function HeroProducers() {
       <div className="container-padding section-padding text-center">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl font-extrabold tracking-tight text-[rgb(var(--foreground))] sm:text-5xl lg:text-6xl">
-            Stop Giving Away Your Solar Energy.
-            <span className="block text-[rgb(var(--primary-rgb))] mt-2">Start Earning What It's Worth.</span>
+            Stop met Uw Zonne-energie Weg te Geven.
+            <span className="block text-[rgb(var(--primary-rgb))] mt-2">Verdien Wat Het Echt Waard Is.</span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-[rgb(var(--muted-foreground))]">
-            Your solar panels are a valuable asset. FLUXECO helps you unlock their full potential by connecting you directly with businesses eager for your green energy surplus, ensuring you get fair compensation.
+            Uw zonnepanelen zijn veel waard. FLUXECO helpt u er het maximale uit te halen. Wij brengen u direct in contact met bedrijven die uw groene stroomoverschot willen kopen. Zo krijgt u een eerlijke prijs.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
             <Button size="lg" asChild className="shadow-lg hover:shadow-xl transition-shadow">
-              <Link href="#earnings-potential">See Your Potential Earnings</Link>
+              <Link href="#earnings-potential">Bekijk Uw Potentiële Inkomsten</Link>
             </Button>
             <Button size="lg" variant="outline" asChild className="border-[rgb(var(--primary-rgb))] text-[rgb(var(--primary-rgb))] hover:bg-green-50 dark:hover:bg-slate-700/50 shadow-md hover:shadow-lg transition-shadow">
-              <Link href="#how-to-join-producers">How to Join</Link>
+              <Link href="#how-to-join-producers">Hoe Deelnemen</Link>
             </Button>
           </div>
         </div>

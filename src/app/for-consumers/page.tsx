@@ -10,7 +10,7 @@ import FinalCTAConsumers from "@/components/sections/consumers/FinalCTAConsumers
 
 export const metadata: Metadata = {
   title: "FLUXECO for Consumers - Secure Your Green Energy Future",
-  description: "Source local, renewable energy directly from producers with FLUXECO. Achieve sustainability goals with stable pricing and a reliable supply for your business or household.",
+  description: "Source local, renewable energy directly from producers with FLUXECO. Achieve sustainability goals with stable pricing and a reliable supply for your business.",
   keywords: "green energy for consumers, renewable energy procurement, P2P energy, sustainability, stable energy prices, local solar energy, Flanders energy solutions",
 };
 
@@ -23,7 +23,6 @@ export default function ForConsumersPage() {
       <ConsumerBenefits />
       <ConsumerCostStructure />
       <HowItWorksForConsumers />
-      {/* <ConsumerTestimonials /> */}
       <FinalCTAConsumers />
     </>
   );

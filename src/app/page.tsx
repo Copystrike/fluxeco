@@ -2,10 +2,10 @@
 import Hero from "@/components/sections/Hero"; // Assuming @ alias
 import Problem from "@/components/sections/Problem";
 import Solution from "@/components/sections/Solution";
-import HowItWorksSummary from "@/components/sections/HowItWorksSummary";
 import Benefits from "@/components/sections/Benefits";
 import AudienceCTA from "@/components/sections/AudienceCTA";
 import FinalCTA from "@/components/sections/FinalCTA";
+import HowToJoinProducers from "@/components/sections/producers/HowToJoinProducers";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       <Hero />
       <Problem />
       <Solution />
-      <HowItWorksSummary />
+      <HowToJoinProducers />
       <Benefits />
       <AudienceCTA />
       <FinalCTA />
